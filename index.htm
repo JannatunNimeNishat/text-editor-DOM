@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/20d6d79dcb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="bg-blue-300 w-3/4 mx-auto mt-20 p-8">
+            <h1 class="text-5xl font-semibold text-center mb-8">My Text Editor</h1>
+            <div class="border w-3/4 mx-auto bg-sky-400 p-6 ">
+                <div class="w-full flex justify-between ">
+                    <div class="flex gap-5 ">
+                        <button id="bold-btn"><i class="fa-solid fa-bold "></i></button>
+                       <!-- <i id="bold-btn" class="fa-solid fa-bold  hover:bg-blue-600 text-center"></i> -->
+                        <button id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                        <button id="underline-btn"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <!-- alignment -->
+                    <div class="flex gap-8 ">
+                        <button id="a-left"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="a-center"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="a-right"><i class="fa-solid fa-align-right"></i></button>
+                    </div>
+                    <!-- input fields -->
+                    <div class="flex  justify-around">
+                        <input id="font-change-field" class="w-1/4 text-center font-semibold" type="number" name="" value="17">
+                        <button id="font-case-change">aA</button>
+                        <input type="color" name="" id="font-color-change">
+                    </div>
+                    
+                </div>
+                <hr class="mt-5">
+                <div class="mt-5 ">
+                    <textarea id="textArea-input" class="w-full h-[300px]" name=""  ></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/editor.js"></script>
+</body>
+
+</html>
